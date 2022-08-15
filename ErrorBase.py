@@ -18,7 +18,7 @@ class ErrorBase:
 		"""
 
 		"""
-		self.__code		= 0
+		self.__code	= 0
 		self.__found	= False
 		self.__message	= ''
 
@@ -48,7 +48,7 @@ class ErrorBase:
 
 		:return:
 		"""
-		self.__code		= 0
+		self.__code	= 0
 		self.__found	= False
 		self.__message	= ''
 
@@ -59,6 +59,6 @@ class ErrorBase:
 		:param message:
 		:return:
 		"""
-		self.__code		= code
+		self.__code	= code
 		self.__found	= True
 		self.__message	= message
