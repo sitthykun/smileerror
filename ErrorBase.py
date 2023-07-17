@@ -14,12 +14,12 @@ class ErrorBase:
 
 	"""
 
-	def __init__(self):
+	def __init__(self, defaultValue: bool= False):
 		"""
 
 		"""
 		self.__code	= 0
-		self.__found	= False
+		self.__found	= defaultValue
 		self.__message	= ''
 
 	def getCode(self) -> int:
