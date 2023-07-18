@@ -1,7 +1,7 @@
 """
 Author: masakokh
 Year: 2022
-Version: 1.0.0
+Version: 1.1.0
 Note:
 Package: base class
 """
@@ -36,14 +36,14 @@ class ErrorBase:
 		"""
 		return self.__message
 
-	def isYes(self) -> bool:
+	def isTrue(self) -> bool:
 		"""
 
 		:return:
 		"""
 		return self.__found
 
-	def setNo(self) -> None:
+	def setFalse(self) -> None:
 		"""
 
 		:return:
@@ -52,7 +52,7 @@ class ErrorBase:
 		self.__found	= False
 		self.__message	= ''
 
-	def setYes(self, code: int= 0, message: str= '') -> None:
+	def setTrue(self, code: int= 0, message: str= '') -> None:
 		"""
 
 		:param code:
