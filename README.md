@@ -20,13 +20,13 @@ class TestClass:
    	def divideByZero(self, inputData: int) -> float:
    		"""
 	 	"""
-   		self.error.setNo()
+   		self.error.setFalse()
 
    		try:
 	 		return inputData / 0
 	
 		exception Exception as e:
-  			self.error.setYes(message= str(e))
+  			self.error.setTrue(message= str(e))
   			return -1
 
 
@@ -34,7 +34,7 @@ class TestClass:
 test	= TestClass()
 result	= test.divideByZero(22)
 
-if test.error.isYes():
+if test.error.isTrue():
 	print(f'Show the messag error please {test.error.getMessage()}')
 ```
 
