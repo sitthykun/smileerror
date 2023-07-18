@@ -34,7 +34,7 @@ class TestClass:
 test	= TestClass()
 result	= test.divideByZero(22)
 
-if test.error.isError():
+if test.error.isYes():
 	print(f'Show the messag error please {test.error.getMessage()}')
 ```
 
