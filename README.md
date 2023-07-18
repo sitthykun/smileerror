@@ -17,7 +17,7 @@ class TestClass:
 	 	# private
 	 	self.error	= ErrorBase()
 
-   def divideByZero(self, inputData: int) -> float:
+   	def divideByZero(self, inputData: int) -> float:
    		"""
 	 	"""
    		self.error.setNo()
@@ -29,10 +29,6 @@ class TestClass:
   			self.error.setYes(message= str(e))
   			return -1
 
-   def isError(self) -> bool:
-   		"""
-	 	"""
-   		return self.error.isError()
 
 # render code
 test	= TestClass()
