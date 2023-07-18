@@ -8,7 +8,7 @@ from ErrorBase import ErrorBase
 # from smilepyerror import ErrorBase
 
 
-class TestCase:
+class TestClass:
 	"""
  	"""
 	def __init__(self):
@@ -35,7 +35,7 @@ class TestCase:
    		return self.error.isError()
 
 # render code
-test	= TestCase()
+test	= TestClass()
 result	= test.divideByZero(22)
 
 if test.error.isError():
