@@ -3,9 +3,9 @@ python error class is, to make it simple structure
 
 ```
 # external library
-from ErrorBase import ErrorBase
+from smilepyerror.ErrorBase import ErrorBase
 # or pypi
-# from smilepyerror import ErrorBase
+# from ErrorBase import ErrorBase
 
 
 class TestClass:
