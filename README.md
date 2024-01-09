@@ -1,9 +1,9 @@
-# smilepyerror
+# smileerror
 python error class is, to make it simple structure
 
 ```
 # external library
-from smilepyerror.ErrorBase import ErrorBase
+from smileerror.ErrorBase import ErrorBase
 # or pypi
 # from ErrorBase import ErrorBase
 
