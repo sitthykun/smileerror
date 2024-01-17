@@ -11,6 +11,9 @@ ipython_config.py
 .python-version
 
 # Environments
+.venv
+.venv/
+.venv/*
 venv
 venv/
 venv/*

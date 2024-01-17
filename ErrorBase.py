@@ -1,7 +1,7 @@
 """
 Author: masakokh
 Year: 2022
-Version: 1.1.0
+Version: 1.0.1
 Note:
 Package: base class
 """
@@ -18,9 +18,17 @@ class ErrorBase:
 		"""
 
 		"""
-		self.__code	= 0
+		self.__code     = 0
 		self.__found	= defaultValue
 		self.__message	= ''
+
+	def findCode(self, code: int) -> bool:
+		"""
+
+		:param code:
+		:return:
+		"""
+		return bool(self.__code == code)
 
 	def getCode(self) -> int:
 		"""
@@ -48,7 +56,7 @@ class ErrorBase:
 
 		:return:
 		"""
-		self.__code	= 0
+		self.__code     = 0
 		self.__found	= False
 		self.__message	= ''
 

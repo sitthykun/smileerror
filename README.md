@@ -1,5 +1,6 @@
 # smileerror
-python error class is, to make it simple structure
+## version 1.0.1
+To make it a standard structure
 
 ```
 # external library
@@ -25,8 +26,12 @@ class TestClass:
    		try:
 	 		return inputData / 0
 	
-		exception Exception as e:
-  			self.error.setTrue(message= str(e))
+		except ZeroDivisionError as e:
+			self.error.setTrue(code= 2, message= str(e))
+			return -1
+		
+		except Exception as e:
+  			self.error.setTrue(code= 1, message= str(e))
   			return -1
 
 
@@ -35,6 +40,10 @@ test	= TestClass()
 result	= test.divideByZero(22)
 
 if test.error.isTrue():
-	print(f'Show the messag error please {test.error.getMessage()}')
+	print(f'Show the error message error: {test.error.getMessage()}')
+
+# if there is a complex structure, let try by this way
+if test.findCode(2):
+	print(f'Show the error message error: {test.error.getMessage()}')
 ```
 
